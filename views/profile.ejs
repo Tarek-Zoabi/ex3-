@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    
+<!-- Tarek Zoabi 208262501
+    Mohammad Azaizi 323951988
+	Bashar Helo 324047323-->
+<html>
+    <head>
+        <title>My Profile</title>
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="/profile.css">
+    </head>
+    <body>
+        
+        <div class="main">
+            <div class="outer" style="background-image: url('<%= bannerPic %>');">
+                
+                    <div class="inner">
+                        <img  class="picture-profile" src="<%= profilePic %>" alt="error" />
+                    </div>
+            </div>
+            <h1 class="title"><%=titleAndParags[0] %></h1>
+            <div class="Info-Container">
+                <div class="info">
+                        <p>
+                            <%-titleAndParags[1]%>
+                        </p>
+                        <p>
+                            <%-titleAndParags[2]%>
+                        </p>
+                        <% bioArray.forEach(line=>{%>
+                            <%-line%>
+                        <%}) %>
+                </div>
+                <div class="wrapper-pic">
+                    <img class="content-pic" src="<%=image1%>" alt="error">
+                </div>
+               
+            </div>
+            <div class="endorsement-container">
+                <div class="endorsement">
+                    <h2>Endorsment</h2>
+                    <!-- after the header lie the endorsements in a div with class endorsement-content
+                    in the div there is a paragraph which wraps the first line of the title 
+                    then a barrier lies between the paragraph and the span that is in the second line -->
+                    <% textFilesJaggedArr.forEach(endorsement=>{%>
+                            <div class ="endorsement-content">
+                                <p>
+                                    <%-endorsement[0]%>
+                                </p>
+                                <hr></hr>
+                                <span>
+                                    <%-endorsement[1]%>
+                                </span>
+                                
+                            </div>
+                   <% }) %>
+                 
+                </div>
+                <div class="wrapper-pic">
+                    <img class="content-pic" src="<%=image2 %>" alt="error">
+                </div>
+            </div>
+            <div class="friends-container">
+                <h2>Meet the whole debugging squad</h2>
+                <div class="friends-pics">
+                    <% teamImages.forEach(image => { %>
+                        <%- image %>
+                    <% }) %>
+                </div>
+            </div>
+
+    </div>
+    </body>
+</html>

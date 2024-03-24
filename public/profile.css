@@ -1,0 +1,209 @@
+/* 
+    Tarek Zoabi 208262501
+	Mohammad Azaizi 323951988
+	Bashar Helo  324047323*/
+    /* Define custom fonts using @font-face */
+    @font-face {
+        font-family: "Bree-Serif";
+        src: url("BreeSerif-Regular.ttf");
+    }
+    @font-face {
+        font-family:"One Rammetto" ;
+        src: url("RammettoOne-Regular.ttf");
+    }
+    /* Styles for the entire body */
+    body{
+        background-image: url('./background.jpg');
+        background-repeat: repeat;
+        font-family: Bree-Serif , serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Styles for the main container */
+    .main{
+        background-color: white;
+        width: 80%;
+        margin:3% auto;
+        box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
+        visibility: visible;
+    }
+    /* Styles for the outer profile container */
+    .outer{
+        height: 350px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure the background image covers the entire container */
+        background-position: center; /* Center the background image */
+    }
+    /* Styles for the inner profile container */
+    .inner{
+        height: 350px;
+        padding-left:2%;
+        position: relative;
+    }
+    /* Styles for the profile picture */
+    .picture-profile{
+        position: absolute;
+        width: 200px;
+        border: 10px solid #fff;
+        border-radius: 200px;
+        top: 70%;
+        left: -2%;
+    }
+    /* Styles for the title */
+    .title{
+        font-size: 3vw;
+        font-family: "One Rammetto", Cursive, sans-serif;
+        padding-top: 10px;
+        text-shadow: 3px 3px 3px #999999;
+        border-radius: 1px;
+        display: block;
+        text-align: center;
+    }
+    
+    
+    
+    
+    /* Styles for various containers */
+    .info-Container,.endorsement-container ,.friends-container,.Info-Container{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+       
+    }
+    .Info-Container{
+        display: flex;
+        flex-direction: row;
+    }
+    /* Styles for the info container */
+    .info{
+        
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    
+    .info-content{
+        padding-left:0%;
+        padding-right:0%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-overflow: unset;
+    }
+    div.info-content p:nth-child(odd) {
+        flex:1;
+        
+    }
+    div.info-content p:nth-child(even) {
+        flex:2;
+        margin-left: 30%;
+    }
+    .real-name{
+        margin-right: 157px;
+    }
+    .test{
+        margin-right: 80px;
+    }
+    .powers{
+        margin-right: 160px;
+    }
+    .stats{
+        margin-right: 175px;
+    }
+    .siblings{
+        margin-right: 140px;
+    }
+    
+    /* Styles for the image in the Info Section */
+    .wrapper-pic{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Styles for the content picture in the Info Section */
+    .content-pic{
+        max-height: 600px;
+        max-width: 400px;
+        width: 30vw;
+        height: auto;
+        
+    }
+    /* Styles for links in the Info Section */
+    .info a {
+        color: #3498db;
+        text-decoration: underline;
+        font-weight: bold;
+    }  
+    
+
+    /* Styles for endorsement section */
+    h2{
+        font-size: 2.5em;
+        font-family: "One Rammetto", Cursive, sans-serif;
+        padding-top: 10px;
+        padding-right: 25vw;
+        text-shadow: 3px 3px 3px #999999;
+        border-radius: 1px;
+        margin-left: 25%;
+    }
+    .endorsement-container{
+        background-image: url("clouds.webp");
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: row-reverse;
+         justify-content: center;
+        align-items: center; 
+    }
+    .endorsement{
+        
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+    .endorsement-content{
+        background-color: #ffffff; 
+        padding: 10px; 
+        margin-top: 0; 
+        margin-bottom: 15px; 
+        margin-left: 10px; 
+        margin-right: 10px; 
+        border-left: 10px solid #cccaca;
+        text-align: center;
+    }
+    
+    .endorsement-content hr{
+        width: 40%;
+    }
+    
+    
+    /* Styles for the friends section */
+    .friends-pics{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .friend{
+        padding: 10px;
+        flex: 1 1 auto; /* Allow images to grow and shrink */
+        max-width: 300px; /* Set a maximum width */
+        height: auto; /* Automatically adjust height based on aspect ratio */
+        object-fit: cover; /* Ensure images cover the entire container */
+        margin: 10px; /* Adjust margin as needed */
+    
+    }
+    .college{
+        padding: 10px;
+        background-color: #5f5b5b;
+        text-align: center;
+    }
+    
